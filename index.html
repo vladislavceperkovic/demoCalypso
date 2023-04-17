@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calypso Tours Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-white">
+        <header class="absolute inset-x-0 top-0 z-50">
+          <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+              <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">Calypso Tours</span>
+                <img class="h-8 w-auto" src="images/CT logo.png" alt="">
+              </a>
+            </div>
+            <div class="flex lg:hidden">
+              <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+              <a href="/travels.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Putovanja</a>
+      
+              <a href="/last.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Last Minute</a>
+      
+              <a href="/atrractions.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Sve Ponude</a>
+      
+              <a href="/company.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">O Nama</a>
+
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="/login.html" class=" pr-5 text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Register<span aria-hidden="true"></span></a>
+
+              <a href="/login.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Log in<span aria-hidden="true"></span></a>
+            </div>
+          </nav>
+          <!-- Mobile menu, show/hide based on menu open state. -->
+          <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+                  <img class="h-8 w-auto" src="images/CT logo.png" alt="">
+                </a>
+                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href=" hover:text-blue-300#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Paketi Putovanja</a>
+      
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Last Minute</a>
+                        
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">O Nama</a>
+      
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Kontakt</a>
+                  </div>
+                  <div class="py-6">
+                    <a href="#" class=" pr-5 text-sm font-semibold leading-6 text-gray-900">Register <span aria-hidden="true"></span></a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="text-center">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Putujte jednostavno uz Calypso!            </h1>
+              <p class="mt-6 text-xl leading-8 text-gray-600">Otkrijte našu ponudu za najbolji porodični odmor bez stresa!</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="/travels.html" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Naše ponude</a>
+                <a href="/last.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Last Minute<span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+                <div class="mt-6 pgrid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 textgray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
+
+                <a href="/travels.html" class="hover:text-blue-300">Srbija<span aria-hidden="true">&rarr;</span></a>
+
+                <a href="/travels.html" class="hover:text-blue-300">Evropski Gradovi<span aria-hidden="true">&rarr;</span></a>
+        
+                <a href="/travels.html" class="hover:text-blue-300">Letovanje<span aria-hidden="true">&rarr;</span></a>
+        
+                <a href="/travels.html" class="hover:text-blue-300">Daleka Putovanja<span aria-hidden="true">&rarr;</span></a>
+        
+                <a href="/travels.html" class="hover:text-blue-300">Shopping Tures<span aria-hidden="true">&rarr;</span></a>
+
+                <a href="/travels.html" class="hover:text-blue-300">Wellness & Spa<span aria-hidden="true">&rarr;</span></a>
+              </div>
+
+              <br>
+              <br>
+
+              <div class="mb-3">
+                <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+                  <input
+                    type="search"
+                    class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-black dark:placeholder:text-black-200 dark:focus:border-primary"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="button-addon1" />
+              
+                  <!--Search button-->
+                  
+                  <div class="relative mb-3" data-te-datepicker-init>
+                    <input
+                      type="text"
+                      class=" peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black-200 dark:placeholder:text-black-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 border border-solid border-neutral-300"
+                      placeholder="Select a date" />
+                    <label
+                      for="floatingInput"
+                      class=" pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-black-200 dark:peer-focus:text-primary"
+                      >Select a date</label
+                    >
+                  </div>
+                  <button
+                    class="relative z-[2] flex items-center rounded-r bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-black-200 shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+                    type="button"
+                    id="button-addon1"
+                    data-te-ripple-init
+                    data-te-ripple-color="light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="h-5 w-5">
+                      <path
+                        fill-rule="evenodd"
+                        d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                  
+              </div>
+
+
+          </div>
+
+
+          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+          <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+            <img src="images/tyler-nix-V3dHmb1MOXM-unsplash.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+            <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+              <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+            <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+              <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Ponosno vas služimo 5 godina!</h2>
+                <p class="mt-6 text-lg leading-8 text-white">Calypso Tours je vodeća agencija za lako putovanje u evropske gradove i prelepa odmarališta.
+                    <br> 
+                    Vi nam kažete šta želite da doživite, a mi ćemo se pobrinuti za vaše letove, pansion i krevet, a mi to radimo sa osmehom jer svako putovanje je razlog za slavlje!</p>
+              </div>
+              <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                
+                <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                  <div class="flex flex-col-reverse">
+                    <dt class="text-base leading-7 text-gray-300">Dostupne zemlje</dt>
+                    <dd class="text-2xl font-bold leading-9 tracking-tight text-white">30+</dd>
+                  </div>
+          
+                  <div class="flex flex-col-reverse">
+                    <dt class="text-base leading-7 text-gray-300">Putnika prošle godine</dt>
+                    <dd class="text-2xl font-bold leading-9 tracking-tight text-white">3 000+</dd>
+                  </div>
+          
+                  <div class="flex flex-col-reverse">
+                    <dt class="text-base leading-7 text-gray-300">Sati praznika rezervisani</dt>
+                    <dd class="text-2xl font-bold leading-9 tracking-tight text-white">30 000+</dd>
+                  </div>
+          
+                  <div class="flex flex-col-reverse">
+                    <dt class="text-base leading-7 text-gray-300">Za ono što je bitno</dt>
+                    <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Neograničena Ljubav</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Pročitajte šta su naši kupci rekli.</h2>
+                <p class="mt-2 text-lg leading-8 text-gray-600">U Calipso Tours vodimo računa da ostanemo u kontaktu sa vama pre, tokom i posle vašeg putovanja. 
+                    <br>
+                    Stalo nam je jer razumemo da su ljudska srca srž istinskog gostoprimstva!
+                </p>
+              </div>
+              <br>
+              <a href="/travels.html" class="mr-6 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Naše ponude            </a>
+              <a href="/last.html" class="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-300">Last Minute<span aria-hidden="true">→</span></a>
+
+              <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Septembar 16, 2022</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Grčka</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Nezaboravan boravak u Hersonisu.
+                      </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Nismo se mogli nadati više. Posebno hvala Mini što se brine o nama i što nam je pomogla da pronađemo doktora koji će brinuti o našoj devojčici.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="images/portraitm.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Janko
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                    <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2020-03-16" class="text-gray-500">Jul 23, 2022</time>
+                      <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Pandorf</a>
+                    </div>
+                    <div class="group relative">
+                      <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          No Stress Shopping.
+                        </a>
+                      </h3>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Proslavila sam rođendan i našla neke odlične ponude. Nema problema sa transportom. Prespavala sam ceo put u povratku! Hotel je bio odličan. Hvala vam!</p>
+                    </div>
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img src="images/portraiw.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                      <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                          <a href="#">
+                            <span class="absolute inset-0"></span>
+                            Milena
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="flex max-w-xl flex-col items-start justify-between">
+                    <div class="flex items-center gap-x-4 text-xs">
+                      <time datetime="2020-03-16" class="text-gray-500">Oktobar 7, 2022</time>
+                      <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Paris</a>
+                    </div>
+                    <div class="group relative">
+                      <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Poslovni put na pravi način!
+                        </a>
+                      </h3>
+                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Duboko brinemo o našim zaposlenima i želeli smo da nagradimo vežbom timbildinga u Parizu kako bismo pokazali da cenimo njihov naporan rad. Sobe za bekstvo, Speakeasis, muzeji, hotelske konferencijske sobe, karte za letove. Sve je bilo glatko i jednostavno. Već planiramo za Milan sledeće godine i moral tima je od tada odličan. Ovo bi mogla postati naša nova tradicija!</p>
+                    </div>
+                    <div class="relative mt-8 flex items-center gap-x-4">
+                      <img src="images/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                      <div class="text-sm leading-6">
+                        <p class="font-semibold text-gray-900">
+                          <a href="#">
+                            <span class="absolute inset-0"></span>
+                            Jovan
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!--
+              Mobile filter dialog
+        
+              Off-canvas filters for mobile, show/hide based on off-canvas filters state.
+            -->
+            <div class="relative z-40 lg:hidden" role="dialog" aria-modal="true">
+              <!--
+                Off-canvas menu backdrop, show/hide based on off-canvas menu state.
+        
+                Entering: "transition-opacity ease-linear duration-300"
+                  From: "opacity-0"
+                  To: "opacity-100"
+                Leaving: "transition-opacity ease-linear duration-300"
+                  From: "opacity-100"
+                  To: "opacity-0"
+              -->
+              <div class="fixed inset-0 bg-black bg-opacity-25"></div>
+        
+              <div class="fixed inset-0 z-40 flex">
+                <!--
+                  Off-canvas menu, show/hide based on off-canvas menu state.
+        
+                  Entering: "transition ease-in-out duration-300 transform"
+                    From: "translate-x-full"
+                    To: "translate-x-0"
+                  Leaving: "transition ease-in-out duration-300 transform"
+                    From: "translate-x-0"
+                    To: "translate-x-full"
+                -->
+                <div class="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
+                  <div class="flex items-center justify-between px-4">
+                    <h2 class="text-lg font-medium text-gray-900">Filters</h2>
+                    <button type="button" class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400">
+                      <span class="sr-only">Close menu</span>
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+        
+                  <!-- Filters -->
+                  <form class="mt-4 border-t border-gray-200">
+                    <h3 class="sr-only">Categories</h3>
+                    <ul role="list" class="px-2 py-3 font-medium text-gray-900">
+                      <li>
+                        <a href="#" class="block px-2 py-3">Totes</a>
+                      </li>
+        
+                      <li>
+                        <a href="#" class="block px-2 py-3">Backpacks</a>
+                      </li>
+        
+                      <li>
+                        <a href="#" class="block px-2 py-3">Travel Bags</a>
+                      </li>
+        
+                      <li>
+                        <a href="#" class="block px-2 py-3">Hip Bags</a>
+                      </li>
+        
+                      <li>
+                        <a href="#" class="block px-2 py-3">Laptop Sleeves</a>
+                      </li>
+                    </ul>
+        
+                    <div class="border-t border-gray-200 px-4 py-6">
+                      <h3 class="-mx-2 -my-3 flow-root">
+                        <!-- Expand/collapse section button -->
+                        <button type="button" class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500" aria-controls="filter-section-mobile-0" aria-expanded="false">
+                          <span class="font-medium text-gray-900">Color</span>
+                          <span class="ml-6 flex items-center">
+                            <!-- Expand icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                            </svg>
+                            <!-- Collapse icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h3>
+                      <!-- Filter section, show/hide based on section state. -->
+                      <div class="pt-6" id="filter-section-mobile-0">
+                        <div class="space-y-6">
+                          <div class="flex items-center">
+                            <input id="filter-mobile-color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-color-0" class="ml-3 min-w-0 flex-1 text-gray-500">White</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-color-1" name="color[]" value="beige" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-color-1" class="ml-3 min-w-0 flex-1 text-gray-500">Beige</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-color-2" name="color[]" value="blue" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-color-2" class="ml-3 min-w-0 flex-1 text-gray-500">Blue</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-color-3" name="color[]" value="brown" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-color-3" class="ml-3 min-w-0 flex-1 text-gray-500">Brown</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-color-4" name="color[]" value="green" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-color-4" class="ml-3 min-w-0 flex-1 text-gray-500">Green</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-color-5" class="ml-3 min-w-0 flex-1 text-gray-500">Purple</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="border-t border-gray-200 px-4 py-6">
+                      <h3 class="-mx-2 -my-3 flow-root">
+                        <!-- Expand/collapse section button -->
+                        <button type="button" class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500" aria-controls="filter-section-mobile-1" aria-expanded="false">
+                          <span class="font-medium text-gray-900">Category</span>
+                          <span class="ml-6 flex items-center">
+                            <!-- Expand icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                            </svg>
+                            <!-- Collapse icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h3>
+                      <!-- Filter section, show/hide based on section state. -->
+                      <div class="pt-6" id="filter-section-mobile-1">
+                        <div class="space-y-6">
+                          <div class="flex items-center">
+                            <input id="filter-mobile-category-0" name="category[]" value="new-arrivals" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-category-0" class="ml-3 min-w-0 flex-1 text-gray-500">Our Travel Packages</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-category-1" name="category[]" value="sale" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-category-1" class="ml-3 min-w-0 flex-1 text-gray-500">Sale</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-category-2" name="category[]" value="travel" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-category-2" class="ml-3 min-w-0 flex-1 text-gray-500">Travel</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-category-3" name="category[]" value="organization" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-category-3" class="ml-3 min-w-0 flex-1 text-gray-500">Organization</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-category-4" name="category[]" value="accessories" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-category-4" class="ml-3 min-w-0 flex-1 text-gray-500">Accessories</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="border-t border-gray-200 px-4 py-6">
+                      <h3 class="-mx-2 -my-3 flow-root">
+                        <!-- Expand/collapse section button -->
+                        <button type="button" class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500" aria-controls="filter-section-mobile-2" aria-expanded="false">
+                          <span class="font-medium text-gray-900">Size</span>
+                          <span class="ml-6 flex items-center">
+                            <!-- Expand icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                            </svg>
+                            <!-- Collapse icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h3>
+                      <!-- Filter section, show/hide based on section state. -->
+                      <div class="pt-6" id="filter-section-mobile-2">
+                        <div class="space-y-6">
+                          <div class="flex items-center">
+                            <input id="filter-mobile-size-0" name="size[]" value="2l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-size-0" class="ml-3 min-w-0 flex-1 text-gray-500">2L</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-size-1" name="size[]" value="6l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-size-1" class="ml-3 min-w-0 flex-1 text-gray-500">6L</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-size-2" name="size[]" value="12l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-size-2" class="ml-3 min-w-0 flex-1 text-gray-500">12L</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-size-3" name="size[]" value="18l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-size-3" class="ml-3 min-w-0 flex-1 text-gray-500">18L</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-size-4" name="size[]" value="20l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-size-4" class="ml-3 min-w-0 flex-1 text-gray-500">20L</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-mobile-size-5" name="size[]" value="40l" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-mobile-size-5" class="ml-3 min-w-0 flex-1 text-gray-500">40L</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        
+            <h1>SVI PAKETI PAGE Example</h1>
+
+            <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div class="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+        
+                <div class="flex items-center">
+                  <div class="relative inline-block text-left">
+                    <div>
+                      <button type="button" class="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900" id="menu-button" aria-expanded="false" aria-haspopup="true">
+                        Sort
+                        <svg class="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+        
+                    <!--
+                      Dropdown menu, show/hide based on menu state.
+        
+                      Entering: "transition ease-out duration-100"
+                        From: "transform opacity-0 scale-95"
+                        To: "transform opacity-100 scale-100"
+                      Leaving: "transition ease-in duration-75"
+                        From: "transform opacity-100 scale-100"
+                        To: "transform opacity-0 scale-95"
+                    -->
+                    <div class="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                      <div class="py-1" role="none">
+                        <!--
+                          Active: "bg-gray-100", Not Active: ""
+        
+                          Selected: "font-medium text-gray-900", Not Selected: "text-gray-500"
+                        -->
+                        <a href="#" class="font-medium text-gray-900 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Most Popular</a>
+        
+                        <a href="#" class="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Best Rating</a>
+        
+                        <a href="#" class="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Newest</a>
+        
+                        <a href="#" class="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Price: Low to High</a>
+        
+                        <a href="#" class="text-gray-500 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Price: High to Low</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <button type="button" class="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
+                    <span class="sr-only">View grid</span>
+                    <svg class="h-5 w-5" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M4.25 2A2.25 2.25 0 002 4.25v2.5A2.25 2.25 0 004.25 9h2.5A2.25 2.25 0 009 6.75v-2.5A2.25 2.25 0 006.75 2h-2.5zm0 9A2.25 2.25 0 002 13.25v2.5A2.25 2.25 0 004.25 18h2.5A2.25 2.25 0 009 15.75v-2.5A2.25 2.25 0 006.75 11h-2.5zm9-9A2.25 2.25 0 0011 4.25v2.5A2.25 2.25 0 0013.25 9h2.5A2.25 2.25 0 0018 6.75v-2.5A2.25 2.25 0 0015.75 2h-2.5zm0 9A2.25 2.25 0 0011 13.25v2.5A2.25 2.25 0 0013.25 18h2.5A2.25 2.25 0 0018 15.75v-2.5A2.25 2.25 0 0015.75 11h-2.5z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <button type="button" class="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden">
+                    <span class="sr-only">Filters</span>
+                    <svg class="h-5 w-5" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M2.628 1.601C5.028 1.206 7.49 1 10 1s4.973.206 7.372.601a.75.75 0 01.628.74v2.288a2.25 2.25 0 01-.659 1.59l-4.682 4.683a2.25 2.25 0 00-.659 1.59v3.037c0 .684-.31 1.33-.844 1.757l-1.937 1.55A.75.75 0 018 18.25v-5.757a2.25 2.25 0 00-.659-1.591L2.659 6.22A2.25 2.25 0 012 4.629V2.34a.75.75 0 01.628-.74z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+        
+              <section aria-labelledby="products-heading" class="pb-24 pt-6">
+                <h2 id="products-heading" class="sr-only">Filter</h2>
+        
+                <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+                  <!-- Filters -->
+                  <form class="hidden lg:block">
+                    <h3 class="sr-only">Filter</h3>
+                    <ul role="list" class="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
+                      <li>
+                        <a href="#">Filter</a>
+                      </li>
+        
+                      <li>
+                        <a href="#">Filter</a>
+                      </li>
+        
+                      <li>
+                        <a href="#">Filter </a>
+                      </li>
+        
+                      <li>
+                        <a href="#">Filter </a>
+                      </li>
+        
+                      <li>
+                        <a href="#">Filter </a>
+                      </li>
+                    </ul>
+        
+                    <div class="border-b border-gray-200 py-6">
+                      <h3 class="-my-3 flow-root">
+                        <!-- Expand/collapse section button -->
+                        <button type="button" class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500" aria-controls="filter-section-0" aria-expanded="false">
+                          <span class="font-medium text-gray-900">Color</span>
+                          <span class="ml-6 flex items-center">
+                            <!-- Expand icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                            </svg>
+                            <!-- Collapse icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h3>
+                      <!-- Filter section, show/hide based on section state. -->
+                      <div class="pt-6" id="filter-section-0">
+                        <div class="space-y-4">
+                          <div class="flex items-center">
+                            <input id="filter-color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-color-0" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-color-1" name="color[]" value="beige" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-color-1" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-color-2" name="color[]" value="blue" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-color-2" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-color-3" name="color[]" value="brown" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-color-3" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-color-4" name="color[]" value="green" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-color-4" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-color-5" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="border-b border-gray-200 py-6">
+                      <h3 class="-my-3 flow-root">
+                        <!-- Expand/collapse section button -->
+                        <button type="button" class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500" aria-controls="filter-section-1" aria-expanded="false">
+                          <span class="font-medium text-gray-900">Filter</span>
+                          <span class="ml-6 flex items-center">
+                            <!-- Expand icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                            </svg>
+                            <!-- Collapse icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h3>
+                      <!-- Filter section, show/hide based on section state. -->
+                      <div class="pt-6" id="filter-section-1">
+                        <div class="space-y-4">
+                          <div class="flex items-center">
+                            <input id="filter-category-0" name="category[]" value="new-arrivals" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-category-0" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-category-1" name="category[]" value="sale" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-category-1" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-category-2" name="category[]" value="travel" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-category-2" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-category-3" name="category[]" value="organization" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-category-3" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-category-4" name="category[]" value="accessories" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-category-4" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="border-b border-gray-200 py-6">
+                      <h3 class="-my-3 flow-root">
+                        <!-- Expand/collapse section button -->
+                        <button type="button" class="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500" aria-controls="filter-section-2" aria-expanded="false">
+                          <span class="font-medium text-gray-900">Filter</span>
+                          <span class="ml-6 flex items-center">
+                            <!-- Expand icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+                            </svg>
+                            <!-- Collapse icon, show/hide based on section open state. -->
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        </button>
+                      </h3>
+                      <!-- Filter section, show/hide based on section state. -->
+                      <div class="pt-6" id="filter-section-2">
+                        <div class="space-y-4">
+                          <div class="flex items-center">
+                            <input id="filter-size-0" name="size[]" value="2l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-size-0" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-size-1" name="size[]" value="6l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-size-1" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-size-2" name="size[]" value="12l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-size-2" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-size-3" name="size[]" value="18l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-size-3" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-size-4" name="size[]" value="20l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-size-4" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+        
+                          <div class="flex items-center">
+                            <input id="filter-size-5" name="size[]" value="40l" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                            <label for="filter-size-5" class="ml-3 text-sm text-gray-600">Filter</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+        
+                  <!-- Product grid -->
+                  <div class="lg:col-span-3">
+                    <!-- Your content -->
+                    <div class="bg-white">
+                    
+                      <div class="relative isolate px-6 pt-14 lg:px-8">
+                        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                          <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                        </div>
+                  <div class="bg-white">
+                      <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                        <h2 class="sr-only">Products</h2>
+                    
+                        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                          <a href="/product.html" class="group">
+                            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                              <img src="images/Athena.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$499</p>
+                          </a>
+                    
+                          <a href="/product.html" class="group">
+                            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                              <img src="images/Berlin.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$599</p>
+                          </a>
+                    
+                          <a href="/product.html" class="group">
+                            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                              <img src="images/Paris.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$649</p>
+                          </a>
+                    
+                          <a href="/product.html" class="group">
+                            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                              <img src="images/prague.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+                          </a>
+                  
+                          <a href="/product.html" class="group">
+                              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="images/hotel1.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                              </div>
+                              <h3 class="mt-4 text-sm text-gray-700">Hotel</h3>
+                              <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+                            </a>
+                  
+                            <a href="/product.html" class="group">
+                              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="images/hotel2.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                              </div>
+                              <h3 class="mt-4 text-sm text-gray-700">Hotel</h3>
+                              <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+                            </a>
+                  
+                            <a href="/product.html" class="group">
+                              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                <img src="images/hotel3.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                              </div>
+                              <h3 class="mt-4 text-sm text-gray-700">Hotel</h3>
+                              <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+                            </a>
+                  
+                    
+                          <!-- More products... -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+          </div>
+
+          <h1>LAST MINUTE PAGE Example</h1>
+
+          <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+              <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+      <div class="bg-white">
+          <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <h2 class="sr-only">Products</h2>
+        
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+              <a href="/product.html" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="images/Athena.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$499</p>
+              </a>
+        
+              <a href="/product.html" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="images/Berlin.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$599</p>
+              </a>
+        
+              <a href="/product.html" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="images/Paris.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$649</p>
+              </a>
+        
+              <a href="/product.html" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="images/prague.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">City</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+              </a>
+      
+              <a href="/product.html" class="group">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/hotel1.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm text-gray-700">Hotel</h3>
+                  <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+                </a>
+      
+                <a href="/product.html" class="group">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/hotel2.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm text-gray-700">Hotel</h3>
+                  <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+                </a>
+      
+                <a href="/product.html" class="group">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/hotel3.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                  </div>
+                  <h3 class="mt-4 text-sm text-gray-700">Hotel</h3>
+                  <p class="mt-1 text-lg font-medium text-gray-900">$399</p>
+                </a>
+      
+        
+              <!-- More products... -->
+            </div>
+          </div>
+        </div>
+
+        <h1>CONTACT PAGE Example</h1>
+
+        <div class="bg-white py-24 sm:py-32">
+          <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+            <div class="max-w-2xl">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Upoznajte nas!</h2>
+              <p class="mt-6 text-lg leading-8 text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eos aliquid fuga eum ipsum beatae voluptatibus porro corporis, nam accusantium, officia placeat? Porro, laudantium saepe. Reprehenderit possimus saepe debitis autem quae? Repellendus alias iusto dignissimos officia, dolores dolor, sint praesentium hic saepe consequuntur exercitationem aliquid sequi asperiores natus ea eum, distinctio tenetur adipisci? Saepe tempora quibusdam hic, voluptatum odit laborum praesentium nam dolore quod! Praesentium mollitia asperiores earum aliquid reprehenderit temporibus saepe a dicta laborum ex quasi sunt, consequuntur, non nulla aliquam corrupti quae, optio repellat ratione? Commodi unde amet exercitationem! Officiis velit voluptate deleniti at voluptatum itaque, maxime iste?</p>
+            </div>
+            <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Petr Boucek</h3>
+                    <p class="text-sm font-semibold leading-6 text-indigo-600">Founder / CEO</p>
+                  </div>
+                </div>
+              </li>
+        
+              <!-- More people... -->
+            </ul>
+          </div>
+        </div>
+
+        <h1>PRODUCT PAGE example</h1>
+        <div class=" mt-8 pt-6">
+          <!-- Image gallery -->
+          <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+            <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
+              <img src="images/Berlin.jpg" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+            </div>
+            <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+              <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+                <img src="images/berlin2.jpg" alt="Model wearing plain black basic tee." class="h-full w-full object-cover object-center">
+              </div>
+              <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+                <img src="images/berlin3.jpg" alt="Model wearing plain gray basic tee." class="h-full w-full object-cover object-center">
+              </div>
+            </div>
+            <div class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
+              <img src="images/berlin4.jpg" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
+            </div>
+          </div>
+      
+          <!-- Product info -->
+          <div class="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
+            <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+              <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Paket Iskustvo Berlin</h1>
+            </div>
+      
+            <!-- Options -->
+            <div class="mt-4 lg:row-span-3 lg:mt-0">
+              <h2 class="sr-only">Trip information</h2>
+              <p class="text-3xl tracking-tight text-gray-900">$499</p>
+      
+              <!-- Reviews -->
+      
+              <form class="mt-10">
+                <!-- Colors -->
+                <div>
+                  <p>Select departure date</p>
+                  <p>Select return date</p>
+                </div>
+      
+                <!-- Sizes -->
+      
+                <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Reserve Trip</button>
+              </form>
+            </div>
+      
+            <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6">
+              <!-- Description and details -->
+              <div>
+                <h3 class="sr-only">Description</h3>
+      
+                <div class="space-y-6">
+                  <p class="text-base text-gray-900">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dolorum amet dignissimos! Voluptatibus illum unde quisquam, corrupti placeat nihil numquam provident! Tempore dolores sapiente repellendus expedita nobis aut rerum, blanditiis esse id dolorum. Debitis eveniet sed placeat consectetur velit. Eaque, necessitatibus eligendi. Tenetur repellat error inventore non, dicta, maxime doloribus laboriosam ex, minus iure commodi velit quae sunt debitis necessitatibus aliquam eaque. Eveniet molestias, sunt soluta ipsum vero corrupti praesentium rerum ducimus voluptatem voluptatum cupiditate ratione recusandae? Esse praesentium tempore maxime, corrupti beatae illo hic ipsum, eos, optio fuga labore. Sint vel porro doloribus non cum, vitae veritatis accusantium dolorem!</p>
+                </div>
+              </div>
+      
+              <div class="mt-10">
+                <h3 class="text-sm font-medium text-gray-900">Highlights</h3>
+      
+                <div class="mt-4">
+                  <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+                    <li class="text-gray-400"><span class="text-gray-600">Highlight</span></li>
+      
+                    <li class="text-gray-400"><span class="text-gray-600">Highlight</span></li>
+      
+                    <li class="text-gray-400"><span class="text-gray-600">Highlight</span></li>
+      
+                    <li class="text-gray-400"><span class="text-gray-600">Highlight</span></li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="mt-10">
+                <h2 class="text-sm font-medium text-gray-900">Detalji o putavanju</h2>
+      
+                <div class="mt-4 space-y-6">
+                  <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, accusantium? Sapiente officiis adipisci nihil explicabo eius ad libero voluptate alias.</p>
+                </div>
+                <h2 class="text-sm font-medium text-gray-900">Letovi</h2>
+      
+                <div class="mt-4 space-y-6">
+                  <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, accusantium? Sapiente officiis adipisci nihil explicabo eius ad libero voluptate alias.</p>
+      
+                  <h2 class="text-sm font-medium text-gray-900">Hotel</h2>
+      
+                  <div class="mt-4 space-y-6">
+                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, accusantium? Sapiente officiis adipisci nihil explicabo eius ad libero voluptate alias.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h1>FOOTER Example</h1>
+
+<!-- Footer container -->
+<footer
+  class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+  <div
+    class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+    <div class="mr-12 hidden lg:block">
+      <span>Povežite se sa nama na društvenim mrežama:</span>
+    </div>
+    <!-- Social network icons container -->
+    <div class="flex justify-center">
+      <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200 hover:text-blue-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+        </svg>
+      </a>
+      <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200 hover:text-blue-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+      <a href="#!" class="mr-6 text-neutral-600 dark:text-neutral-200 hover:text-blue-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+  <div class="mx-6 py-10 text-center md:text-left">
+    <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Tailwind Elements section -->
+      <div class="">
+        <h6
+          class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-4 w-4">
+            <path
+              d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+          </svg>
+          Calypso Tours
+        </h6>
+        <p>
+            Otvoren je 2018. godine u Beogradu Srbija Petr, vlasnik hotela u Pragu sa željom da svoju strast i znanje za putovanja i gostoprimstvo podeli sa svojim sunarodnicima.        <br>
+        <br>
+        Calypso Tours sa ponosom služi zajednici planirajući, organizujući i organizujući putovanja za porodice, pojedince i posao sa strašću za ono što je važno. Jednostavnost i pouzdanost, kao i saosećanje u vašim važnim trenucima. 
+        <br>
+        <br>
+        Petr koristi svoje iskustvo decenijskog vlasnika hotela kako bi uspostavio i održavao vredna partnerstva sa turističkim agencijama u preko 30 zemalja kako biste se mogli odmoriti tokom odmora i zaboraviti na svakodnevne obaveze.
+        </p>
+      </div>
+      <!-- Products section -->
+      <div class="">
+        <h6
+          class="mb-4 flex justify-center font-semibold uppercase md:justify-start hover:text-blue-300">
+          Paketi
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >Srbija</a
+          >
+        </p>
+
+        <p class="mb-4">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+              >Evropski Gradovi
+              </a
+            >
+          </p>
+
+        <p class="mb-4">
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >Letovanja</a
+          >
+        </p>
+
+        <p class="mb-4">
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >Daleke Destinacije</a
+          >
+        </p>
+        <p>
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >Shopping Ture</a
+          >
+        </p>
+
+
+      </div>
+      <!-- Useful links section -->
+      <div class="">
+        <h6
+          class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          Meni
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >Ponude</a
+          >
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >Last Minute</a
+          >
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >O Nama</a
+          >
+        </p>
+        <p>
+          <a href="#!" class="text-neutral-600 dark:text-neutral-200 hover:text-blue-300"
+            >Kontakt</a
+          >
+        </p>
+      </div>
+      <!-- Contact section -->
+      <div>
+        <h6
+          class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          Radije bi da razgovaramo lično?
+        </h6>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+            <path
+              d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+          </svg>
+          Kralja Milana 4, Beograd, Srbija
+        </p>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+            <path
+              d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+          </svg>
+          info@calypsotours.info 
+        </p>
+        <p class="mb-4 flex items-center justify-center md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+              clip-rule="evenodd" />
+          </svg>
+          +381 011 2688057
+        </p>
+        <p class="flex items-center justify-center md:justify-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
+              clip-rule="evenodd" />
+          </svg>
+          + 381 063 1177810
+        </p>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="mr-3 h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
+              clip-rule="evenodd" />
+          </svg>
+          Radno Vreme: 
+          <br> 
+          <br>
+          Pon - Pet: 10:00-14:00 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Copyright section-->
+  <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
+    <span>© 2023 Copyright: Calypso Tours</span>
+
+    <br>
+    <a
+      class="font-semibold text-neutral-600 dark:text-neutral-400 "
+      href="https://ceperkovicweb.agency/ "
+      >Designed and Optimized for Perfomance by <span class="hover:text-blue-300">Ceperkovic Web Agency</span> </a
+    >
+  </div>
+</footer>
+        </div>
+      </div>
+      
+</body>
+</html>
